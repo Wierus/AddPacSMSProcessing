@@ -1,0 +1,11 @@
+# Visual Studio Solution User Options
+*.suo
+
+# Build results
+*/bin/Debug/
+*/bin/Release/*.exe.config
+*/bin/Release/*.exe.manifest
+*/bin/Release/*.pdb
+*/bin/Release/*.vshost.exe
+*/bin/Release/Logs/
+*/obj/

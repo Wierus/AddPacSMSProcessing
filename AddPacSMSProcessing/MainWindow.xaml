@@ -1,0 +1,23 @@
+﻿<Window x:Class="AddPacSMSProcessing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddPac SMS Processing 1.0.0" Height="200" Width="480" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл" Margin="0">
+                <MenuItem x:Name="SettingsMenuItem" Header="Настройки..." Click="SettingsMenuItem_Click" />
+                <MenuItem x:Name="DebugMenuItem" Header="Отладка..." Click="DebugMenuItem_Click" />
+                <MenuItem x:Name="CloseMenuItem" Header="Выход" Click="CloseMenuItem_Click" />
+            </MenuItem>
+        </Menu>
+        <Label Grid.Row="1" Content="Номер телефона:" HorizontalAlignment="Left" Margin="5,5,5,5" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" x:Name="AddressTextBox" VerticalAlignment="Top" Margin="111,5,5,5" Height="23" />
+        <Label Grid.Row="1" Content="Текст сообщения:" HorizontalAlignment="Left" Margin="5,33,5,5" VerticalAlignment="Top" />
+        <TextBox Grid.Row="1" x:Name="MessageTextBox" VerticalAlignment="Top" Margin="111,33,5,5" Height="80" />
+        <Button Grid.Row="1" x:Name="SendMessage" Content="Отправить сообщение" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,118,5,5"  Width="150" Click="Button_Click" />
+    </Grid>
+</Window>

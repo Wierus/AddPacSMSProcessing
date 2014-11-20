@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Setting name="ServerIPAddress" value="192.168.1.1" description="IP-адрес шлюза" />
+  <Setting name="ServerPort" value="23" description="Порт шлюза для Telnet-соединения" />
+  <Setting name="ServerLogin" value="login" description="Логин для входа" />
+  <Setting name="ServerPassword" value="password" description="Пароль" />
+  <Setting name="DefaultSlotNumber" value="0" description="Номер слота по умолчанию, используемого при работе с мобильным интерфейсом" />
+  <Setting name="DefaultPortNumber" value="0" description="Номер порта по умолчанию, используемого при работе с мобильным интерфейсом" />
+</Settings>

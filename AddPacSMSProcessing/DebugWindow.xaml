@@ -1,0 +1,37 @@
+﻿<Window x:Class="AddPacSMSProcessing.DebugWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Отладка" Height="670" Width="540" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Журнал:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" />
+        <TextBox Grid.Row="0" x:Name="LogTextBox" Margin="5,33,5,5" VerticalAlignment="Top" TextWrapping="Wrap" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" IsReadOnly="True" Height="200" />
+        <Label Grid.Row="1" Content="State" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" />
+        <Label Grid.Row="1" x:Name="StateLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,5,5,5" />
+        <Label Grid.Row="1" Content="CommandMode" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,28,5,5" />
+        <Label Grid.Row="1" x:Name="CommandModeLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,28,5,5" />
+        <Label Grid.Row="1" Content="DebugOutputMode" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,51,5,5" />
+        <Label Grid.Row="1" x:Name="DebugOutputModeLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,51,5,5" />
+        <Button Grid.Row="1" x:Name="ClearLogButton" Content="Очистить лог" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5,5,5,5" Width="100" Click="ClearLogButton_Click" />
+        <Label Grid.Row="2" Content="Адрес сервера:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" />
+        <Label Grid.Row="2" x:Name="ServerAddress" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,5,5,5" />
+        <Button Grid.Row="2" x:Name="ConnectButton" Content="Подключиться" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,33,5,5" Width="120" Click="ConnectButton_Click" />
+        <Button Grid.Row="2" x:Name="DisconnectButton" Content="Отключиться" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="135,33,5,5" Width="120" Click="DisconnectButton_Click" />
+        <Label Grid.Row="3" Content="Cценарии:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" />
+        <Button Grid.Row="3" x:Name="AuthorizeButton" Content="Авторизовать" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,33,5,5" Width="250" Click="AuthorizeButton_Click" />
+        <Button Grid.Row="3" x:Name="ActivateUnprivilegedModeButton" Content="Активировать обычный режим" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,58,5,5" Width="250" Click="ActivateUnprivilegedModeButton_Click" />
+        <Button Grid.Row="3" x:Name="ActivatePrivilegedModeButton" Content="Активировать привилегированный режим" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,83,5,5" Width="250" Click="ActivatePrivilegedModeButton_Click" />
+        <Button Grid.Row="3" x:Name="ActivateConfigModeButton" Content="Активировать режим настройки" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,108,5,5" Width="250" Click="ActivateConfigModeButton_Click" />
+        <Button Grid.Row="3" x:Name="EnableDebugOutputButton" Content="Включить вывод отладочной информации" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,133,5,5" Width="250" Click="EnableDebugOutputButton_Click" />
+        <Button Grid.Row="3" x:Name="DisableDebugOutputButton" Content="Выключить вывод отладочной информации" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,158,5,5" Width="250" Click="DisableDebugOutputButton_Click" />
+        <Label Grid.Row="4" Content="Произвольная команда:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,5,5" />
+        <TextBox Grid.Row="4" x:Name="CommandTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,33,5,5" Width="250" />
+        <Button Grid.Row="4" x:Name="SendButton" Content="Отправить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,57,5,5" Width="120" Click="SendButton_Click" />
+    </Grid>
+</Window>
